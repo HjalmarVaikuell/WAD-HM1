@@ -99,7 +99,6 @@ a {
     display: flex;
     box-shadow: none;
 }
-
 .post_profile {
     aspect-ratio: 1 / 1;
     height: 75px;
@@ -107,7 +106,7 @@ a {
     border: 1cap solid #000000;
     border-radius: 5px;
 }
-
+/* Using id selector */
 #logo {
     position: absolute;
     top: 10px;
@@ -121,30 +120,27 @@ a {
     max-height: min(100%, 67vw);
 }
 
-p {
+/* Using child selector to margin text correclty */
+div > p {
     margin: 1vw;
 }
-
-.date {
+/* Using adjacent sibling selector */
+img + p {
     margin: 1vw;
     font-size: large;
 }
-
-.like {
+/* Using general sibling selector */
+div ~ img {
     margin: 1vmin;
     width: 4vw;
     height: 4vw;
 }
 
-.like:hover {
-    margin-top: 0.5vw;
-    margin-bottom: 1.5vw;
-}
-
 .nav {
     margin: 10px;
     }
-  
+
+/* Using descendant combinator */
 .nav a {
     padding: 10px 15px;
     text-transform: uppercase;
@@ -154,7 +150,7 @@ p {
     color: #34495e;
     font-size: .99em;
     }
-  
+
 .nav a:hover {
     background-color: #7ebeb6;
     color: #17599e;
