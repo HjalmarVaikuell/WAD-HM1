@@ -3,16 +3,6 @@
     box-sizing: border-box;
     }
 
-body {
-    flex-grow: 1;
-}
-
-.pagewrap {
-    min-height: 100vh;
-    flex-direction: column;
-    display: flex;
-}
-
 .flexbox-container {
     display: flex;
     justify-content: space-around;
@@ -39,12 +29,14 @@ body {
     max-width: 98%;
     border: 5cap;
     border-radius: 5px;
+    background-color: azure;
 }
 
 .flexbox-header {
     min-height: 75px;
     min-width: 250px;
     flex-grow: 1;
+    background-color: #b68d8d;
 }
 
 .flexbox-footer {
@@ -52,6 +44,7 @@ body {
     min-width: 250px;
     margin-top: auto;
     flex-grow: 1;
+    background-color: #b68d8d;
 }
 
 .flexbox-contents {
@@ -78,20 +71,18 @@ a {
 }
 
 .post {
-    display: grid;
     width: 100%;
-    grid-template-rows: 10vw auto;
     flex-grow: 1;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgb(252, 212, 212);
+    background-color: #e3c8c8;
 }
 
 .post-header {
     display: flex;
     justify-content: space-between;
-    height: 10vw;
-    background-color: rgb(252, 212, 212);
+    height: 85px;
+    background-color: #ccadad;
 }
 
 .post-contents {
@@ -111,8 +102,8 @@ a {
 
 .post_profile {
     aspect-ratio: 1 / 1;
-    max-width: 8vw;
-    margin: 1vw;
+    height: 75px;
+    margin: 5px;
     border: 1cap solid #000000;
     border-radius: 5px;
 }
@@ -121,8 +112,8 @@ a {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 50px;
-    margin: 3vw;
+    height: max(40px ,8vmin);
+    margin: 20px;
 }
 
 .img {
@@ -140,7 +131,7 @@ p {
 }
 
 .like {
-    margin: 1vw;
+    margin: 1vmin;
     width: 4vw;
     height: 4vw;
 }
@@ -170,7 +161,7 @@ p {
     }
 
 @media (max-width: 300px) {
-    .logo {
+    #logo {
         display: none;
         }
     }
@@ -180,7 +171,7 @@ p {
         }
     .flexbox-contents {
         max-width: 100%;
-    }
+        }
     }
 
             
