@@ -1,0 +1,76 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    }
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #b68d8d;
+    margin: 0.5vw;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 15vh;
+    max-height: 10vmin;
+    border-radius: 5px;
+}
+.post-profile {
+    padding-right: 0;
+    width: 9vw;
+    max-width: 9vmin;
+    align-self: center;
+}
+.header-text {
+    padding: 0;
+    align-self: center;
+    font-size: 5vmin;
+    object-fit: contain;
+    color: black;
+    text-decoration: none;
+}
+.hover:hover {
+    background-color: #7ebeb6;
+    color: #17599e;
+}
+.login-form {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 55vh;
+    align-items: center;
+    text-align: center;
+    background-color: #b68d8d;
+    border-radius: 5px;
+}
+p {
+    font-size: 2.5vh;
+    margin: 0;
+    padding-bottom: 0.25vh;
+}
+b {
+    font-size: 3vh;
+    padding: 5vh;
+}
+a {
+    font-size: 2.5vh;
+    color:rgb(42, 49, 192);
+    margin: 0;
+    padding-top: 1vh;
+}
+input {
+    margin: 0;
+    height: 4vh;
+    font-size: 2vh;
+    width: 20vw;
+}
+form {
+    padding: 1vh;
+    margin: 0;
+}

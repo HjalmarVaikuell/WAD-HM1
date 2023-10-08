@@ -3,11 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="res/css/loginStyle.css">
         <title>Login</title>
     </head>
 
     <body>
-        
-
+        <header>
+            <a class="header-text hover" href="./index.html">Home</a>
+            <a href="./index.html" style="align-self: center;"><img class="post-profile hover" src="res/images/profile_icon.png" alt="Profile picture" href="./index.html"></a>
+        </header>
+        <div class="login-form">
+            <b>Welcome to PostIt</b>
+            <a>Create an account</a>
+            <p>or</p>
+            <p>Please log in</p>
+            <form action="./index.html" method="post" onsubmit="return validateForm()">
+                <input type="email" id="email" name="email" required placeholder="Email"><br></br>
+                <input type="password" id="password" name="password" required placeholder="Password"><br></br>
+                <input type="submit" value="Login" style="width: 10vw;">
+            </form>
+            <a>Forget password</a>
+        </div>
+        <script>
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+    
+                if (email === "" || password === "") {
+                    alert("Both Email and Username are required fields.");
+                    return false; // Prevent form submission
+                }
+                return true; // Allow form submission
+            }
+        </script>
     </body>
 </html>
