@@ -33,10 +33,13 @@
 }
 
 .flexbox-header {
-    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
     min-width: 250px;
     flex-grow: 1;
     background-color: #b68d8d;
+    align-items: center;
 }
 
 .flexbox-footer {
@@ -62,12 +65,35 @@
 
 a {
     color: #34495e;
-    text-decoration: none; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-button {
+    margin: 0 .5vw;
+}
+
+.main-button {
+    background-color: #694040;
+    box-shadow: none;
+    border-color: #c0c0c0;
+    border-radius: 5px;
+    border-style: solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background-color: #8a5353;
 }
 
 .table {
-    margin: 10;
-    padding: 10;
+    margin: 10px;
+    padding: 10px;
 }
 
 .post {
@@ -81,7 +107,7 @@ a {
 .post-header {
     display: flex;
     justify-content: space-between;
-    height: 85px;
+    height: 8vw;
     background-color: #ccadad;
 }
 
@@ -99,20 +125,23 @@ a {
     display: flex;
     box-shadow: none;
 }
-.post_profile {
+
+.post-profile {
     aspect-ratio: 1 / 1;
-    height: 75px;
-    margin: 5px;
+    margin: 1vw;
     border: 1cap solid #000000;
-    border-radius: 5px;
+    width: 6vw;
+    height: 6vw;
+    object-fit: cover;
+    border-radius: 50%;
+
 }
 /* Using id selector */
 #logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: max(40px ,8vmin);
-    margin: 20px;
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .img {
@@ -120,7 +149,7 @@ a {
     max-height: min(100%, 67vw);
 }
 
-/* Using child selector to margin text correclty */
+/* Using child selector to margin text correctly */
 div > p {
     margin: 1vw;
 }
@@ -134,11 +163,14 @@ div ~ img {
     margin: 1vmin;
     width: 4vw;
     height: 4vw;
+    cursor: pointer;
 }
 
+
 .nav {
-    margin: 10px;
-    }
+    display: flex;
+    align-items: center;
+}
 
 /* Using descendant combinator */
 .nav a {
@@ -149,25 +181,26 @@ div ~ img {
     width: max-content;
     color: #34495e;
     font-size: .99em;
-    }
+}
 
 .nav a:hover {
     background-color: #7ebeb6;
     color: #17599e;
-    }
+}
 
 @media (max-width: 300px) {
     #logo {
         display: none;
-        }
     }
+}
+
 @media (max-width: 500px) {
     .flexbox-sidebar {
         display: none;
-        }
+    }
     .flexbox-contents {
         max-width: 100%;
-        }
     }
+}
 
             

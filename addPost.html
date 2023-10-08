@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="et">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Add Post</title>
-    </head>
-
-    <body>
-        
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/style.css">
+    <link rel="stylesheet" href="res/css/addPostStyle.css">
+    <title>Add post</title>
+</head>
+<body>
+<div class="pagewrap">
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-header">
+            <div class="nav">
+                <a href="index.html" class="nav-button">Home</a>
+            </div>
+            <img class="post-profile" id="logo" src="res/images/profile_icon.png" alt="Profile picture">
+        </div>
+    </div>
+    <div class="flexbox-container">
+        <div class="flexbox-item" id="add-post-container">
+            <form class="form-wrapper">
+                <div id="text-area-div">
+                    <label for="post-text-area">Post body</label>
+                    <textarea id="post-text-area" rows="10" cols="33" maxlength="280" required></textarea>
+                </div>
+                <br>
+                <div id="file-input-div">
+                    <label for="file-input">Select file</label>
+                    <input type="file" id="file-input" accept="video/mp4, image/png, image/jpeg">
+                </div>
+                <input type="submit" value="Create post" class="main-button" id="submit-button">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
 </html>
