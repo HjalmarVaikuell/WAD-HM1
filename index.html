@@ -9,13 +9,22 @@
     <body>
         <div class="flexbox-container">
             <div class="flexbox-item flexbox-header">
-
-                <div class="nav">
-                    <a href="index.html" class="nav-button">Home</a>
-                    <a href="addPost.html" class="nav-button">Add post</a>
+                <table class="nav">
+                    <!-- Using descendant combinator -->
+                    <th><a href="./index.html">Home</a></th>
+                    <th><a href="./addPost.html">Add Post</a></th>
+                </table>
+                <div class="dropdown">
+                    <button class="menubtn">
+                        <!-- Using ID selector -->
+                        <img class="post_profile" id="logo" src="res/images/profile_icon.png" alt="Profile picture">
+                    </button>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <menu>Home</menu>
+                        <menu>About</menu>
+                        <menu>Contact</menu>
+                    </div>
                 </div>
-                <!-- Using ID selector -->
-                <img class="post-profile" id="logo" src="res/images/profile_icon.png" alt="Profile picture">
             </div>
         </div>
         <div class="flexbox-container-center">
@@ -23,7 +32,7 @@
             <div class="flexbox-item flexbox-contents">
                 <div class="flexbox-post post">
                     <div class="post post-header">
-                        <img class="post-profile" src="res/images/user1.jpg">
+                        <img class="post_profile" src="res/images/user1.jpg">
                         <!-- Using adjacent sibling selector -->
                         <p>27. September 2023</p>
                     </div>
@@ -40,7 +49,7 @@
                 </div>
                 <div class="flexbox-post post">
                     <div class="post post-header">
-                        <img class="post-profile" src="res/images/user2.jpg">
+                        <img class="post_profile" src="res/images/user2.jpg">
                         <!-- Using adjacent sibling selector -->
                         <p>24. September 2023</p>
                     </div>
@@ -56,7 +65,7 @@
                 </div>
                 <div class="flexbox-post post">
                     <div class="post post-header">
-                        <img class="post-profile" src="res/images/user3.jpg">
+                        <img class="post_profile" src="res/images/user3.jpg">
                         <!-- Using adjacent sibling selector -->
                         <p>17. September 2023</p>
                     </div>
@@ -72,7 +81,7 @@
                 </div>
                 <div class="flexbox-post post">
                     <div class="post post-header">
-                        <img class="post-profile" src="res/images/user4.jpg">
+                        <img class="post_profile" src="res/images/user4.jpg">
                         <!-- Using adjacent sibling selector -->
                         <p>4. March 2022</p>
                     </div>
@@ -86,7 +95,7 @@
                 </div>
                 <div class="flexbox-post post">
                     <div class="post post-header">
-                        <img class="post-profile" src="res/images/user5.jpeg">
+                        <img class="post_profile" src="res/images/user5.jpeg">
                         <!-- Using adjacent sibling selector -->
                         <p>21. February 2022</p>
                     </div>

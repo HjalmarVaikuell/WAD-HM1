@@ -73,6 +73,7 @@ a {
     margin: 0 .5vw;
 }
 
+/* Redundant? */
 .main-button {
     background-color: #694040;
     box-shadow: none;
@@ -183,10 +184,51 @@ div ~ img {
     font-size: .99em;
 }
 
+/* Using pseudo-class */
 .nav a:hover {
     background-color: #7ebeb6;
     color: #17599e;
 }
+
+/* --- */
+.menubtn {
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.menubtn:hover, .menubtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content menu {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown menu:hover {background-color: #ddd;}
+
+.show {display: block;}
+  /* --- */
 
 @media (max-width: 300px) {
     #logo {
