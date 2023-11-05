@@ -139,8 +139,6 @@ a {
 }
 /* Using id selector */
 #logo {
-    min-width: 50px;
-    min-height: 50px;
     width: 50px;
     height: 50px;
 }
@@ -192,9 +190,9 @@ div ~ img {
 
 /* --- */
 .dropbtn {
-    font-size: 16px;
     border: none;
     cursor: pointer;
+    background-color: #b68d8d;
   }
   
   .dropdown {
@@ -210,6 +208,8 @@ div ~ img {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    left: auto;
+    right: 0;
   }
   
   .dropdown-content menu-item {
@@ -218,9 +218,7 @@ div ~ img {
     text-decoration: none;
     display: block;
   }
-  
-  .dropdown :hover {background-color: #ddd;}
-  
+    
   .show {display: block;}
   /* --- */
 
