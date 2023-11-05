@@ -17,3 +17,15 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
+// Fetch json on window load
+window.onload = async () => {
+  let posts = await promise;
+  console.log(posts)
+}
+
+const promise = fetch("https://api.npoint.io/f54f6407e20e2593188c").then(response => response.json()).then(data => {
+  return data;
+});
