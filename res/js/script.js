@@ -26,7 +26,8 @@ window.onload = async () => {
   createPostsFromJSON(posts)
 }
 
-const promise = fetch("https://api.npoint.io/f54f6407e20e2593188c").then(response => response.json()).then(data => {
+const promise = fetch("res/json/posts.json",).then(response => response.json()).then(data => {
+  // fetch("https://api.npoint.io/f54f6407e20e2593188c")
   return data;
 });
 
