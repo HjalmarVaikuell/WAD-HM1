@@ -16,11 +16,11 @@
                     <th><a href="./addPost.html">Add Post</a></th>
                 </table>
                 <div class="dropdown">
-                    <button onclick="dropdownFunction()" class="dropbtn"><img class="post_profile" id="logo" src="res/images/profile_icon.png" alt="Profile picture"></button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <menu-item href="#home">Home</menu-item>
-                      <menu-item href="#about">About</menu-item>
-                      <menu-item href="#contact">Contact</menu-item>
+                    <button onclick="dropdownToggle()" class="dropbtn"><img class="dropbtn" id="logo" onclick="dropdownToggle" src="res/images/profile_icon.png" alt="Profile picture"></button>
+                    <div id="dropdownMenu" class="dropdown-content">
+                      <menu-item>John Doe</menu-item>
+                      <menu-item>john.doe@ut.ee</menu-item>
+                      <menu-item>logout</menu-item>
                     </div>
                 </div>
             </div>

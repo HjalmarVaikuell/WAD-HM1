@@ -1,7 +1,8 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function dropdownFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+// Helped by: https://www.w3schools.com/howto/howto_js_dropdown.asp
+
+// Show or hide dropdown menu
+function dropdownToggle() {
+  document.getElementById("dropdownMenu").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
